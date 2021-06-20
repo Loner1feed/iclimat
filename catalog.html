@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/css/reset.css">
+    <link rel="stylesheet" href="./plugins/slick/slick.css">
+    <link rel="stylesheet" href="./plugins/jq-ui/jquery-ui.min.css">    
+    <link rel="stylesheet" href="./styles/css/fonts.css">
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <link rel="stylesheet" href="./styles/css/media.css">
+
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="crumbs catalogBlock__crumbs">
+            <div class="wrap crumbs__wrap">
+                <a href="javascript://" class="crumbs__link">
+                    <span class="icon-home"></span>
+                </a>
+
+                <span class="icon-chevron"></span>
+
+                <a href="javascript://" class="crumbs__link">Каталог</a>
+
+                <span class="icon-chevron"></span>
+
+                <a href="javascript://" class="crumbs__link">Мульти-сплит системы</a>
+            </div>
+            
+        </div>
+
+        <div class="catalogBlock">
+            <div class="wrap catalogBlock__wrap">
+                
+                <h2 class="title catalogBlock__title">Мультисплит-системы</h2>
+
+                <div class="catalogBlock__body">
+                    <aside class="filter">
+                        <span class="filter__count">187 ТОВАРОВ</span>
+
+                        <a href="javascript://" class="filter__opener">Фильтр</a>
+
+                        <div class="filter__body">
+                            <div class="filter__heading">
+                                <img src="./img/svg/filter.svg" alt="">
+                                <span>Фильтр</span>
+                                <a href="javascript://" onclick="filterClose()" class="filter__close"></a>
+                            </div>
+    
+                            <div class="filter__inner">
+                                <div class="filter__priceBlock filter__item">
+                                    <span class="filter__item-heading">цена</span>
+        
+                                    <div class="filter__item-body">
+                                        <div class="filter__range"></div>
+        
+                                        <div class="filter__priceRow">
+                                            <div class="filter__price">
+                                                <input type="text" name="" id="">
+                                            </div>
+        
+                                            <div class="filter__price">
+                                                <input type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="filter__item filter__dropdown">
+                                    <a href="#" class="filter__item-heading" onclick="dropToggle(this)">
+                                        Чекбоксы
+                                        <span class="icon-chevron"></span>
+                                    </a>
+    
+                                    <div class="filter__item-body">
+                                        <div class="filter__checkBlock">
+                                            <div class="filter__checkBlock-row">
+                                                <input type="checkbox" name="check-1" id="check-1">
+                                                <label for="check-1">чекбокс 1<span class="filter__checkBlock-count">22</span></label>
+                                                
+                                            </div>
+    
+                                            <div class="filter__checkBlock-row">
+                                                <input type="checkbox" name="check-2" id="check-2">
+                                                <label for="check-2">чекбокс 2<span class="filter__checkBlock-count">22</span></label>
+                                                
+                                            </div>
+    
+                                            <div class="filter__checkBlock-row">
+                                                <input type="checkbox" name="check-3" id="check-3">
+                                                <label for="check-3">чекбокс 3<span class="filter__checkBlock-count">22</span></label>
+                                                
+                                            </div>
+                                        </div>
+    
+                                        <a href="javascript://" class="filter__item-more">Показать больше (29)</a>
+                                    </div>
+                                </div>
+    
+                                <div class="filter__item filter__dropdown">
+                                    <a href="#" class="filter__item-heading" onclick="dropToggle(this)">
+                                        слайдер
+                                        <span class="icon-chevron"></span>
+                                    </a>
+    
+                                    <div class="filter__item-body">
+                                        <div class="filter__range"></div>
+        
+                                        <div class="filter__priceRow">
+                                            <div class="filter__price">
+                                                <input type="text" name="" id="">
+                                            </div>
+        
+                                            <div class="filter__price">
+                                                <input type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="filter__item filter__optBlock">
+                                    <div class="filter__checkBlock-row">
+                                        <input type="checkbox" name="check-main-1" id="check-main-1">
+                                        <label for="check-main-1">чекбокс 1<span class="filter__checkBlock-count">22</span></label>
+                                        
+                                    </div>
+    
+                                    <div class="filter__checkBlock-row">
+                                        <input type="checkbox" name="check-main-2" id="check-main-2">
+                                        <label for="check-main-2">чекбокс 2<span class="filter__checkBlock-count">22</span></label>
+                                        
+                                    </div>
+    
+                                    <div class="filter__checkBlock-row">
+                                        <input type="checkbox" name="check-main-3" id="check-main-3">
+                                        <label for="check-main-3">чекбокс 3<span class="filter__checkBlock-count">22</span></label>
+                                        
+                                    </div>
+                                </div>
+
+                                <a href="javascript://" onclick="filterClose()" class="filter__submit">Применить фильтры</a>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <main>
+                        <div class="bannerBlock">
+                            <div class="bannerBlock__cover">
+                                <img src="./img/bannerBlockBg.webp" alt="">
+                            </div>
+
+                            <div class="bannerBlock__upper">
+                                <h2 class="title bannerBlock__title">
+                                    Кондиционеры на <span class="red">обогрев</span> и <span class="blue">охлаждение</span> с гарантией от 2 лет!
+                                </h2>
+    
+                                <div class="bannerBlock__grid">
+                                    <div class="bannerBlock__item">
+                                        <span class="icon-tag"></span>
+                                        Монтаж от 599 грн
+                                    </div>
+
+                                    <div class="bannerBlock__item">
+                                        <span class="icon-tag"></span>
+                                        Бесплатная доставка
+                                    </div>
+
+                                    <div class="bannerBlock__item">
+                                        <span class="icon-tag"></span>
+                                        Скидка до 30%
+                                    </div>
+
+                                    <div class="bannerBlock__item">
+                                        <span class="icon-tag"></span>
+                                        С нами можно торговаться!
+                                    </div>
+
+                                    <div class="bannerBlock__item">
+                                        <span class="icon-tag"></span>
+                                        Гарантийное и постгарантийное обслуживание
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bannerBlock__bottom">
+                                <span>С нами можно торговаться! Вашу цену уточняйте у менеджера!</span>
+                            </div>
+                        </div>
+
+                        <div class="sortBlock">
+                            <span class="sortBlock__heading">
+                                Сортировать по:
+                            </span>
+
+                            <div class="sortBlock__item">
+
+                                <input type="radio" name="sort" id="sort-price">
+
+                                <label for="sort-price">
+                                    <span class="sortBlock__label">Цене</span>
+                                    <div class="sortBlock__arrows">
+                                        <span class="icon-arrow"></span>
+                                        <span class="icon-arrow"></span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="sortBlock__item">
+
+                                <input type="radio" name="sort" id="sort-popularity">
+
+                                <label for="sort-popularity">
+                                    <span class="sortBlock__label">Популярности</span>
+                                    <div class="sortBlock__arrows">
+                                        <span class="icon-arrow"></span>
+                                        <span class="icon-arrow"></span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="sortBlock__item">
+
+                                <input type="radio" name="sort" id="sort-discount">
+
+                                <label for="sort-discount">
+                                    <span class="sortBlock__label">Акционные</span>
+                                    <div class="sortBlock__arrows">
+                                        <span class="icon-arrow"></span>
+                                        <span class="icon-arrow"></span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="sortBlock__item">
+
+                                <input type="radio" name="sort" id="sort-rating">
+
+                                <label for="sort-rating">
+                                    <span class="sortBlock__label">По рейтингу</span>
+                                    <div class="sortBlock__arrows">
+                                        <span class="icon-arrow"></span>
+                                        <span class="icon-arrow"></span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="catalogBlock__grid">
+                            
+                            <div class="itemCard catalogBlock__itemCard">
+
+                                <div class="itemCard__badgeBlock">
+                                    <div class="itemCard__badge itemCard__badge--black">
+                                        <span class="icon-tag"></span>
+                                        <span>ХИТ</span>
+                                    </div>
+        
+                                    <div class="itemCard__badge itemCard__badge--red">
+                                        <span class="icon-tag"></span>
+                                        <span>АКЦИЯ</span>
+                                    </div>
+                                </div>
+        
+                                <a href="javascript://" class="itemCard__img">
+                                    <img src="./img/itemCardImg.webp" alt="">
+                                </a>
+        
+                                <span class="itemCard__label">
+                                    НАСТЕННЫЕ КОНДИЦИОНЕРЫ <br>
+                                    ЦЕНА=КАЧЕСТВО
+                                </span>
+        
+                                <a href="javascript://" class="itemCard__heading">
+                                    Кондиционер сплит-система Cooper&Hunter Prima Plus CH-S07XN7
+                                </a>
+        
+                                <div class="itemCard__topRow">
+                                    <div class="itemCard__feedback">
+                                        <div class="itemCard__feedback-stars">
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+                                        </div>
+        
+                                        <a href="javascript://" class="itemCard__feedback-label">12 отзывов</a>
+                                    </div>
+                                    
+                                    <div class="itemCard__price">
+                                        <span class="itemCard__price-new">9340 грн</span>
+        
+                                        <div class="itemCard__price-old">
+                                            <span class="itemCard__price-percent">-6%</span>
+                                            <span>9890 грн</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="itemCard__listHeading">
+                                    <span>Модель</span>
+                                    <span>Площадь</span>
+                                    <span>Цена</span>
+                                </div>
+        
+                                <div class="itemCard__list">
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="itemCard__bottomRow">
+                                    <a href="javascript://" class="button itemCard__button">
+                                        <span class="icon-cart"></span>
+                                        <span>В КОРЗИНУ</span>
+                                    </a>
+        
+                                    <div class="itemCard__nav">
+                                        <a href="javascript://" class="itemCard__nav-item itemCard__compare">
+                                            <span class="icon-compare"></span>
+                                        </a>
+                                        <a href="javascript://" class="itemCard__nav-item itemCard__fav">
+                                            <span class="icon-star"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itemCard catalogBlock__itemCard">
+
+                                <div class="itemCard__badgeBlock">
+                                    <div class="itemCard__badge itemCard__badge--black">
+                                        <span class="icon-tag"></span>
+                                        <span>ХИТ</span>
+                                    </div>
+        
+                                    <div class="itemCard__badge itemCard__badge--red">
+                                        <span class="icon-tag"></span>
+                                        <span>АКЦИЯ</span>
+                                    </div>
+                                </div>
+        
+                                <a href="javascript://" class="itemCard__img">
+                                    <img src="./img/itemCardImg.webp" alt="">
+                                </a>
+        
+                                <span class="itemCard__label">
+                                    НАСТЕННЫЕ КОНДИЦИОНЕРЫ <br>
+                                    ЦЕНА=КАЧЕСТВО
+                                </span>
+        
+                                <a href="javascript://" class="itemCard__heading">
+                                    Кондиционер сплит-система Cooper&Hunter Prima Plus CH-S07XN7
+                                </a>
+        
+                                <div class="itemCard__topRow">
+                                    <div class="itemCard__feedback">
+                                        <div class="itemCard__feedback-stars">
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+                                        </div>
+        
+                                        <a href="javascript://" class="itemCard__feedback-label">12 отзывов</a>
+                                    </div>
+                                    
+                                    <div class="itemCard__price">
+                                        <span class="itemCard__price-new">9340 грн</span>
+        
+                                        <div class="itemCard__price-old">
+                                            <span class="itemCard__price-percent">-6%</span>
+                                            <span>9890 грн</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="itemCard__listHeading">
+                                    <span>Модель</span>
+                                    <span>Площадь</span>
+                                    <span>Цена</span>
+                                </div>
+        
+                                <div class="itemCard__list">
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="itemCard__bottomRow">
+                                    <a href="javascript://" class="button itemCard__button">
+                                        <span class="icon-cart"></span>
+                                        <span>В КОРЗИНУ</span>
+                                    </a>
+        
+                                    <div class="itemCard__nav">
+                                        <a href="javascript://" class="itemCard__nav-item itemCard__compare">
+                                            <span class="icon-compare"></span>
+                                        </a>
+                                        <a href="javascript://" class="itemCard__nav-item itemCard__fav">
+                                            <span class="icon-star"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itemCard catalogBlock__itemCard">
+
+                                <div class="itemCard__badgeBlock">
+                                    <div class="itemCard__badge itemCard__badge--black">
+                                        <span class="icon-tag"></span>
+                                        <span>ХИТ</span>
+                                    </div>
+        
+                                    <div class="itemCard__badge itemCard__badge--red">
+                                        <span class="icon-tag"></span>
+                                        <span>АКЦИЯ</span>
+                                    </div>
+                                </div>
+        
+                                <a href="javascript://" class="itemCard__img">
+                                    <img src="./img/itemCardImg.webp" alt="">
+                                </a>
+        
+                                <span class="itemCard__label">
+                                    НАСТЕННЫЕ КОНДИЦИОНЕРЫ <br>
+                                    ЦЕНА=КАЧЕСТВО
+                                </span>
+        
+                                <a href="javascript://" class="itemCard__heading">
+                                    Кондиционер сплит-система Cooper&Hunter Prima Plus CH-S07XN7
+                                </a>
+        
+                                <div class="itemCard__topRow">
+                                    <div class="itemCard__feedback">
+                                        <div class="itemCard__feedback-stars">
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+                                        </div>
+        
+                                        <a href="javascript://" class="itemCard__feedback-label">12 отзывов</a>
+                                    </div>
+                                    
+                                    <div class="itemCard__price">
+                                        <span class="itemCard__price-new">9340 грн</span>
+        
+                                        <div class="itemCard__price-old">
+                                            <span class="itemCard__price-percent">-6%</span>
+                                            <span>9890 грн</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="itemCard__listHeading">
+                                    <span>Модель</span>
+                                    <span>Площадь</span>
+                                    <span>Цена</span>
+                                </div>
+        
+                                <div class="itemCard__list">
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="itemCard__bottomRow">
+                                    <a href="javascript://" class="button itemCard__button">
+                                        <span class="icon-cart"></span>
+                                        <span>В КОРЗИНУ</span>
+                                    </a>
+        
+                                    <div class="itemCard__nav">
+                                        <a href="javascript://" class="itemCard__nav-item itemCard__compare">
+                                            <span class="icon-compare"></span>
+                                        </a>
+                                        <a href="javascript://" class="itemCard__nav-item itemCard__fav">
+                                            <span class="icon-star"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itemCard catalogBlock__itemCard">
+
+                                <div class="itemCard__badgeBlock">
+                                    <div class="itemCard__badge itemCard__badge--black">
+                                        <span class="icon-tag"></span>
+                                        <span>ХИТ</span>
+                                    </div>
+        
+                                    <div class="itemCard__badge itemCard__badge--red">
+                                        <span class="icon-tag"></span>
+                                        <span>АКЦИЯ</span>
+                                    </div>
+                                </div>
+        
+                                <a href="javascript://" class="itemCard__img">
+                                    <img src="./img/itemCardImg.webp" alt="">
+                                </a>
+        
+                                <span class="itemCard__label">
+                                    НАСТЕННЫЕ КОНДИЦИОНЕРЫ <br>
+                                    ЦЕНА=КАЧЕСТВО
+                                </span>
+        
+                                <a href="javascript://" class="itemCard__heading">
+                                    Кондиционер сплит-система Cooper&Hunter Prima Plus CH-S07XN7
+                                </a>
+        
+                                <div class="itemCard__topRow">
+                                    <div class="itemCard__feedback">
+                                        <div class="itemCard__feedback-stars">
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+        
+                                            <div class="itemCard__feedback-star">
+                                                <span class="icon-star-regular"></span>
+                                            </div>
+                                        </div>
+        
+                                        <a href="javascript://" class="itemCard__feedback-label">12 отзывов</a>
+                                    </div>
+                                    
+                                    <div class="itemCard__price">
+                                        <span class="itemCard__price-new">9340 грн</span>
+        
+                                        <div class="itemCard__price-old">
+                                            <span class="itemCard__price-percent">-6%</span>
+                                            <span>9890 грн</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="itemCard__listHeading">
+                                    <span>Модель</span>
+                                    <span>Площадь</span>
+                                    <span>Цена</span>
+                                </div>
+        
+                                <div class="itemCard__list">
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+        
+                                    <div class="itemCard__list-item">
+                                        <a href="javascript://" class="itemCard__list-link">CH-S09XN7</a>
+        
+                                        <div class="itemCard__list-content">
+        
+                                            <span class="itemCard__list-range">70 м²</span>
+        
+                                            <div class="itemCard__list-price">
+                                                <span>10600 грн</span>
+                                                <span>10150 грн</span>
+                                            </div>
+        
+                                            <input type="radio" name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="itemCard__bottomRow">
+                                    <a href="javascript://" class="button itemCard__button">
+                                        <span class="icon-cart"></span>
+                                        <span>В КОРЗИНУ</span>
+                                    </a>
+        
+                                    <div class="itemCard__nav">
+                                        <a href="javascript://" class="itemCard__nav-item itemCard__compare">
+                                            <span class="icon-compare"></span>
+                                        </a>
+                                        <a href="javascript://" class="itemCard__nav-item itemCard__fav">
+                                            <span class="icon-star"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pager">
+                            <button class="pager__arrow pager__arrow--left">
+                                <span class="icon-chevron"></span>
+                            </button>
+
+                            <div class="pager__pages">
+                                <a href="javascripT://" class="pager__item pager__item--active">1</a>
+                                <a href="javascripT://" class="pager__item">2</a>
+                                <a href="javascripT://" class="pager__item">3</a>
+                                <a href="javascripT://" class="pager__item">4</a>
+                                <a href="javascripT://" class="pager__item">5</a>
+                            </div>
+
+                            <button class="pager__arrow pager__arrow--right">
+                                <span class="icon-chevron"></span>
+                            </button>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./plugins/slick/slick.min.js"></script>
+    <script src="./plugins/jq-ui/jquery-ui.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

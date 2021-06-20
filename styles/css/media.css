@@ -18,10 +18,32 @@
     display: none;
   }
   .header__bottom {
-    display: none;
+    position: fixed;
+    top: -300px;
+    opacity: 0;
+    z-index: 45;
+    background: #fff;
+  }
+  .header__bottom .header__wrap {
+    padding-left: 155px;
+  }
+  .header__bottom button {
+    top: 30px;
+  }
+  .header__bottom--open {
+    top: 50px;
+    opacity: 1;
   }
   .header__top .header__wrap {
     padding-left: 155px;
+  }
+  .header__search {
+    border: none;
+    position: relative;
+    z-index: 45;
+    border-radius: 0;
+    margin-top: 30px;
+    background: #fff;
   }
 
   .catalog {
@@ -42,6 +64,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .searchBtn--active {
+    background: #00BDC9;
   }
 
   .menu {
@@ -80,6 +105,14 @@
   .footer__col:nth-child(3) {
     min-width: 175px;
   }
+
+  .exchangeBlock__inputBlock {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .exchangeBlock .inputItem {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .title {
@@ -108,6 +141,9 @@
     max-width: 100%;
     height: auto;
     margin: 0;
+  }
+  .header__bottom .header__wrap {
+    padding-left: 25px;
   }
   .header__top .header__wrap {
     padding-left: 0px;
@@ -145,6 +181,21 @@
   .cardBlock__grid {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bannerBlock__title {
+    font-size: 28px;
+  }
+  .bannerBlock__bottom {
+    font-size: 22px;
+  }
+
+  .filter {
+    width: 200px;
+  }
+
+  .exchangeBlock__info {
+    max-width: 350px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -230,6 +281,129 @@
     padding-bottom: 30px;
     min-width: 0;
   }
+
+  .catalogBlock__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .catalogBlock__title {
+    text-align: center;
+  }
+
+  .filter {
+    width: 100%;
+  }
+  .filter__heading {
+    position: relative;
+  }
+  .filter__submit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 999999999999999;
+    cursor: pointer;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    background: #FFE545;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .filter__close {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+  }
+  .filter__close:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(50%) rotate(-45deg);
+            transform: translateY(50%) rotate(-45deg);
+  }
+  .filter__close:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(50%) rotate(45deg);
+            transform: translateY(50%) rotate(45deg);
+  }
+  .filter__count {
+    display: none;
+  }
+  .filter__opener {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  .filter__body {
+    position: fixed;
+    padding-top: 50px;
+    top: -100vh;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 2;
+    overflow-x: hidden;
+  }
+  .filter__body--open {
+    top: 0;
+  }
+
+  .exchangeBlock__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .exchangeBlock__info {
+    max-width: 100%;
+  }
+  .exchangeBlock__contact {
+    max-width: 100%;
+  }
+  .exchangeBlock__item-heading {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .exchangeBlock__id {
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 @media screen and (max-width: 610px) {
   .cardBlock__grid {
@@ -263,8 +437,104 @@
     display: none;
   }
 
+  .bannerBlock {
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .bannerBlock__bottom {
+    font-size: 16px;
+  }
+  .bannerBlock__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .bannerBlock__grid {
+    margin-bottom: 0;
+  }
+  .bannerBlock__item {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .sortBlock {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sortBlock__heading {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .sortBlock__item {
+    margin-bottom: 10px;
+  }
+
   .wrap {
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  .exchangeBlock__headRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .exchangeBlock__heading {
+    font-size: 22px;
+    text-align: center;
+  }
+  .exchangeBlock__info {
+    margin-bottom: 50px;
+    max-height: 500px;
+    overflow-x: hidden;
+  }
+  .exchangeBlock__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .exchangeBlock__item-text {
+    padding-left: 0;
+  }
+  .exchangeBlock__item-heading {
+    text-align: center;
+  }
+  .exchangeBlock__item-row {
+    padding-bottom: 20px;
+  }
+  .exchangeBlock__promo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .exchangeBlock__promo input {
+    margin-bottom: 15px;
+  }
+  .exchangeBlock__button {
+    margin: 0px auto;
+  }
+  .exchangeBlock__id {
+    margin: 0px auto;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .exchangeBlock__img {
+    margin: 0px auto;
+    margin-bottom: 15px;
+  }
+  .exchangeBlock__count {
+    position: unset;
+    display: block;
+    text-align: center;
   }
 }
