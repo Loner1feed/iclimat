@@ -136,6 +136,13 @@ $blue: #00BDC9;
             max-width: 100%;
         }
     }
+
+    .contactsBlock{
+        &__fixed{
+            padding-left: 20px;
+            min-width: 350px;
+        }
+    }
 }
 
 
@@ -451,6 +458,56 @@ $blue: #00BDC9;
         &__id{
             font-size: 12px;
             font-weight: 500;
+        }
+    }
+
+    .contactsBlock{
+        &__row{
+            flex-direction: column;
+        }
+
+        &__fixed{
+            width: 100%;
+            max-width: 100%;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            min-height: 0;
+        }
+
+        &__form{
+            padding-right: 20px;
+            min-width: 0;
+        }
+
+        &__innerRow{
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        &__phoneRow{
+            justify-content: center;
+            margin: 0px auto;
+        }
+
+        &__phoneTown{
+            margin: 0px auto;
+            justify-content: center;
+        }
+
+        &__socials{
+            justify-content: center;
+        }
+
+        &__fill{
+            max-width: 100%;
+            width: 100%;
+            min-height: 250px;
+            max-height: 300px;
+            iframe{
+                min-height: 250px;
+            }
         }
     }
 }
