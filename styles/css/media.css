@@ -182,6 +182,19 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 970px) {
+  .productCard__mainRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .cardSlider {
+    margin: 0px auto;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 900px) {
   .cardBlock__grid {
     -ms-grid-columns: (1fr)[2];
@@ -462,6 +475,43 @@
   .contactsBlock__fill iframe {
     min-height: 250px;
   }
+
+  .productCard__titleRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .productCard__feedback-stars {
+    margin-left: 0;
+  }
+  .productCard__feedback-button {
+    margin: 0px auto;
+  }
+  .productCard__topInfo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .cardInfo__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cardInfo__textGrid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardInfo__textCol {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 610px) {
   .cardBlock__grid {
@@ -594,5 +644,58 @@
     position: unset;
     display: block;
     text-align: center;
+  }
+
+  .cardInfo__priceRow {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cardInfo__price {
+    width: 100%;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .cardInfo__count {
+    margin-left: 0;
+  }
+  .cardInfo__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardInfo__id {
+    margin-bottom: 10px;
+  }
+  .cardInfo__nav {
+    margin-top: 10px;
+  }
+
+  .rewiew {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rewiew__sender {
+    margin-bottom: 15px;
+  }
+  .rewiew__body {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .productCard__viewInfo {
+    padding-left: 0;
+  }
+  .productCard__label {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .productCard__feedback-button {
+    margin-top: 10px;
   }
 }

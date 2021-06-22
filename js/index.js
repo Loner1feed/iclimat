@@ -98,9 +98,26 @@ const dropToggle = (el) => {
 
 $('.filter__opener').click(() => {
     $('.filter__body').addClass('filter__body--open');
-    
+
 })
 
 const filterClose = () => {
     $('.filter__body').removeClass('filter__body--open');
 }
+
+
+$('.cardSlider__top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.cardSlider__bottom'
+});
+$('.cardSlider__bottom').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.cardSlider__top',
+    focusOnSelect: true,
+    nextArrow: '<a href="javascript://" class="arrow arrow--right"><span class="icon-chevron"><span></a>',
+    prevArrow: '<a href="javascript://" class="arrow arrow--left"><span class="icon-chevron"><span></a>',
+});
